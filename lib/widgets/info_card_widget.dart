@@ -1,5 +1,4 @@
 import 'package:donateplasma/constants/color_constants.dart';
-import 'package:donateplasma/themes/themes_colors.dart';
 import 'package:flutter/material.dart';
 
 class InfoCardWidget extends StatefulWidget {
@@ -24,8 +23,7 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
         decoration: BoxDecoration(
           boxShadow: <BoxShadow>[
             BoxShadow(
-                color: widget.color
-                    .withOpacity(0.6),
+                color: widget.color.withOpacity(0.6),
                 offset: const Offset(1.1, 4.0),
                 blurRadius: 8.0),
           ],
@@ -48,7 +46,13 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.fromLTRB(10, 15, 5, 0),
-              child: Text(widget.message, style: TextStyle(fontFamily: 'Poppins', fontWeight: FontWeight.bold, fontSize: 14.5),),
+              child: Text(
+                widget.message,
+                style: TextStyle(
+                    fontFamily: 'Poppins',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14.5),
+              ),
             )
           ],
         ),
@@ -56,5 +60,3 @@ class _InfoCardWidgetState extends State<InfoCardWidget> {
     );
   }
 }
-
-

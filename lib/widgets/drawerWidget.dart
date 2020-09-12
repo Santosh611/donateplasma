@@ -1,5 +1,6 @@
 import 'package:donateplasma/screens/FAQ.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
+import 'package:donateplasma/screens/Settings.dart';
 import 'package:donateplasma/screens/edit_profile.dart';
 import 'package:donateplasma/screens/story_screen.dart';
 import 'package:flutter/material.dart';
@@ -70,6 +71,16 @@ class CustomDrawer extends StatelessWidget {
             title: Text('Faq'),
             onTap: () {
               Navigator.of(context).pushNamed(Faq.routeName);
+            },
+          ),
+          ListTile(
+            leading: FaIcon(
+              FontAwesomeIcons.slidersH,
+              color: Colors.pinkAccent.shade400,
+            ),
+            title: Text('Settings'),
+            onTap: () {
+              Navigator.of(context).pushNamed(Settings.routeName);
             },
           ),
         ],

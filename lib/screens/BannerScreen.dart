@@ -1,11 +1,10 @@
 import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/text_style_constants.dart';
-import 'package:donateplasma/screens/HomeScreen.dart';
+
 import 'package:donateplasma/screens/welcome.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/constants/color_constants.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BannerScreen extends StatelessWidget {
   static const routeName = '/banner';
