@@ -3,6 +3,7 @@ import 'package:donateplasma/providers/users.dart';
 import 'package:donateplasma/screens/BannerScreen.dart';
 import 'package:donateplasma/screens/FAQ.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
+import 'package:donateplasma/screens/Settings.dart';
 import 'package:donateplasma/screens/edit_profile.dart';
 import 'package:donateplasma/screens/login.dart';
 import 'package:donateplasma/screens/story_screen.dart';
@@ -46,6 +47,7 @@ class MyApp extends StatelessWidget {
           Login.routeName: (ctx) => Login(),
           WelcomeScreen.routeName: (ctx) => WelcomeScreen(),
           CustomDrawer.routeName: (ctx) => CustomDrawer(),
+          Settings.routeName: (ctx) => Settings(),
         },
       ),
     );

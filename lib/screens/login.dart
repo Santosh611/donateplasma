@@ -4,7 +4,6 @@ import 'package:donateplasma/widgets/question_row.dart';
 import 'package:donateplasma/widgets/sign_button.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screen_scaler/flutter_screen_scaler.dart';
-import 'BannerScreen.dart';
 import 'package:donateplasma/screens/HomeScreen.dart';
 
 class Login extends StatelessWidget {

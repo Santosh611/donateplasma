@@ -1,6 +1,6 @@
 import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/color_constants.dart';
-import 'package:donateplasma/constants/text_style_constants.dart';
+
 import 'package:donateplasma/providers/information.dart';
 import 'package:donateplasma/providers/users.dart';
 import 'package:donateplasma/widgets/drawerWidget.dart';
@@ -8,7 +8,7 @@ import 'package:donateplasma/widgets/info_card_widget.dart';
 import 'package:donateplasma/widgets/users_card_widget.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+
 import 'package:provider/provider.dart';
 
 import 'edit_profile.dart';

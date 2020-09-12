@@ -2,7 +2,6 @@ import 'package:donateplasma/animation/FadeAnimation.dart';
 import 'package:donateplasma/constants/color_constants.dart';
 import 'package:donateplasma/widgets/drawerWidget.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class EditProfile extends StatelessWidget {
   static const routeName = '/edit';
