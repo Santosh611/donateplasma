@@ -161,27 +161,18 @@ class EditProfile extends StatelessWidget {
                     ),
                     FadeAnimation(
                         2,
-                        Container(
-                          height: 50,
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Theme.of(context).primaryColor,
-                          ),
-                          child: Center(
-                            child: Text(
-                              "Save",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 20,
-                                fontFamily: 'Poppins',
-                              ),
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.0, right: 0.0),
+                          child: RaisedButton(
+                            textColor: Colors.white,
+                            color: Colors.black,
+                            child: Text("Save"),
+                            onPressed: () {},
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(30.0),
                             ),
                           ),
                         )),
-                    SizedBox(
-                      height: 70,
-                    ),
                   ],
                 ),
               )
