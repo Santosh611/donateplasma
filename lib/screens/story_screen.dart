@@ -4,6 +4,8 @@ import 'package:donateplasma/screens/edit_profile.dart';
 import 'package:donateplasma/widgets/drawerWidget.dart';
 import 'package:flutter/material.dart';
 
+import 'edit_profile.dart';
+
 class StoryScreen extends StatelessWidget {
   static const routeName = '/story';
 
@@ -141,28 +143,22 @@ class StoryScreen extends StatelessWidget {
                       height: 30,
                     ),
                     FadeAnimation(
-                      2,
-                      Container(
-                        height: 50,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Theme.of(context).primaryColor,
-                        ),
-                        child: Center(
-                          child: Text(
-                            "Share",
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'Poppins',
-                                fontSize: 20),
+                        2,
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.0, right: 0.0),
+                          child: RaisedButton(
+                            textColor: Colors.white,
+                            color: Colors.black,
+                            child: Text("Share"),
+                            onPressed: () {
+                              Navigator.of(context)
+                                  .pushReplacementNamed(EditProfile.routeName);
+                            },
+                            shape: new RoundedRectangleBorder(
+                              borderRadius: new BorderRadius.circular(30.0),
+                            ),
                           ),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      height: 70,
-                    ),
+                        )),
                   ],
                 ),
               )

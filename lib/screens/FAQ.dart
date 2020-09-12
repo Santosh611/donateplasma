@@ -3,6 +3,8 @@ import 'package:donateplasma/widgets/drawerWidget.dart';
 import 'package:flutter/material.dart';
 import 'package:donateplasma/screens/productbox.dart';
 
+import 'edit_profile.dart';
+
 class Faq extends StatelessWidget {
   static const routeName = '/Faq';
 
@@ -37,7 +39,10 @@ class Faq extends StatelessWidget {
           ),
           actions: <Widget>[
             IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context)
+                    .pushReplacementNamed(EditProfile.routeName);
+              },
               icon: Icon(
                 Icons.pan_tool,
                 size: 25,

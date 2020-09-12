@@ -11,6 +11,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:provider/provider.dart';
 
+import 'edit_profile.dart';
+
 class HomeScreen extends StatefulWidget {
   static const routeName = '/home';
 
@@ -51,7 +53,9 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         actions: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pushReplacementNamed(EditProfile.routeName);
+            },
             icon: Icon(
               Icons.pan_tool,
               size: 25,
